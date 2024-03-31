@@ -41,18 +41,19 @@ nav a:hover {border-bottom-color: var(--main-color); }
 
 .btn-big {font-weight: 700;text-transform:uppercase;padding: 1.5rem 1.9rem;margin:1.7rem;font-size: 1.5rem;}
 
-.center-content h3 {font-size: 1.8rem;margin:2.7rem auto; font-weight: 500;}
+.center-content h3 {font-size: 1.8rem;margin:1.2rem auto; font-weight: 500;}
 
-.form-contact {display: flex; align-content: center; flex-wrap: nowrap; box-sizing: border-box; border: 2px solid var(--main-color); box-shadow: 0px 0px 5px var(--main-color); width: 60%; border-radius: 15px; padding: .2rem 1.2rem; margin: 0 auto; flex-direction: column; justify-content: center; align-items: center;}
+.form-contact {display: flex; align-content: center; flex-wrap: nowrap; box-sizing: border-box; border: 2px solid var(--main-color); box-shadow: 0px 0px 5px var(--main-color); width: 100%; border-radius: 15px; padding: .2rem 1.2rem; margin: 0 auto; flex-direction: column; justify-content: center; align-items: center;}
 
-.form-int-content {width: 100%; box-sizing: border-box; display: flex; justify-content: center;flex-direction: column;}
+.form-int-content {width: 100%; box-sizing: border-box; display: flex;}
 .form-int-content-two {margin-top: 1rem;}
 
-input.name-form-contact, input.email-form-contact {display: block; width: 100%; height: 3.5rem; font-family: "DM Sans", sans-serif; font-size: 1rem; box-sizing: border-box;border:none;}
+input.name-form-contact, input.email-form-contact {display: block; width: 50%; height: 3.5rem; font-family: "DM Sans", sans-serif; font-size: 1rem; box-sizing: border-box;border:none;}
 
-textarea.massage-form-contact {width: 100%;min-height: 400px; margin: 0 auto; font-family: "DM Sans", sans-serif; font-size: 1rem; box-sizing: border-box; resize: none;border:none;}
+textarea.massage-form-contact {width: 100%;min-height: 330px; margin: 0 auto; font-family: "DM Sans", sans-serif; font-size: 1rem; box-sizing: border-box; resize: none;border:none;}
 .form-contact input:focus, .form-contact textarea:focus {box-shadow: 0px 0px 1px 0px var(--main-color);border:none;}
 
+input.name-form-contact, input.email-form-contact, textarea.massage-form-contact {padding: .6rem;line-height: 1.1;font-family: "DM Sans", sans-serif ;}
 
 iframe {width: 100%;min-height: 900px;}
 
