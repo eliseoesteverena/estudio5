@@ -60,8 +60,9 @@ iframe {width: 100%;min-height: 700px;}
 @media (width <= 1050px) {
     .center-content {
       width: 100%;
+      padding: 1rem;
     }
-    .logo {margin-inline-start: .5rem;}
+    .logo {margin-inline-start: .5rem;font-size: 2.2em;}
 }
 @media (width <= 950px) {
     .welcome h1 {font-size: 3.8rem;margin-top: 2.3rem;line-height: .9;}
