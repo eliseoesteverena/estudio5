@@ -65,9 +65,9 @@ iframe {width: 100%;min-height: 700px;}
     .logo {margin-inline-start: .5rem;font-size: 2.2em;}
 }
 @media (width <= 950px) {
-    .welcome h1 {font-size: 3.8rem;margin-top: 2.3rem;line-height: .9;}
+    .welcome h1 {font-size: 3.5rem;margin-top: 2.3rem;line-height: .9;}
     .welcome h2 {font-size: 1.4rem;margin-top: 1rem;}
-
-    .btn-new-proyect {font-size: 1.1rem;padding: 1.1rem 1.5rem;}
+    .btn-content {margin-top: .8rem;}
+    .btn-new-proyect {font-size: 1.1rem;padding: 1.1rem 1.5rem;margin:1.2rem;}
 
 }
