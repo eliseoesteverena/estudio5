@@ -57,8 +57,8 @@ input.name-form-contact, input.email-form-contact {display: block; width: 50%; h
 textarea.massage-form-contact {width: 100%;min-height: 330px; margin: 0 auto; resize: none;border:none;}
 .form-contact input:focus, .form-contact textarea:focus {box-shadow: none;border:none;}
 
-#ContactForm1_contact-form-submit {font-size: 1.5rem; border: 3px solid var(--main-color);border-radius: 50px;background-color: none;color: var(--text-color-light); padding: .5rem .9rem;box-shadow: 0px 0px 5px var(--shadow-color);display: flex;align-items: center;font-weight: 600;margin:1rem;}
-#ContactForm1_contact-form-submit:hover {background-color: #0479bd;transition: all 0.2s linear;box-shadow: 0px 0px 5px var(--shadow-color) inset;} 
+#ContactForm1_contact-form-submit {font-size: 1.5rem; border: 3px solid var(--main-color);border-radius: 50px;background-color: none;color: var(--main-color); padding: .5rem .9rem;box-shadow: 0px 0px 5px var(--shadow-color);display: flex;align-items: center;font-weight: 600;margin:1rem;}
+#ContactForm1_contact-form-submit:hover {background-color:var(--main-color);color:var(--text-color-light);transition: all 0.2s linear;box-shadow: 0px 0px 5px var(--shadow-color) inset;} 
 
 @media (width <= 1050px) {
     .center-content {
