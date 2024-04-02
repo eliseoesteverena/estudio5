@@ -81,7 +81,7 @@ textarea.massage-form-contact {width: 100%;min-height: 330px; margin: 0 auto; re
     .btn-content .btn-secondary {font-size: 1.5rem;}
 }
 @media (width <= 800px) {
-    .welcome h1 {line-height: .9;font-size: 4.5rem;}
+    .welcome h1 {line-height: .9;font-size: 4.2rem;}
 }
 @media (width <= 600px) {
     .welcome h1 {line-height: .9;}
