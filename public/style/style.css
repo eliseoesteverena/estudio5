@@ -11,7 +11,7 @@ table {	border-collapse: collapse; border-spacing: 0;}
 input,textarea:focus{outline: none;box-sizing: border-box;}
 /* End RESET CSS */
 
-body { font-family: "DM Sans", sans-serif; font-optical-sizing: auto;font-weight: normal;font-style: normal;}
+body { font-family: "DM Sans", sans-serif; font-optical-sizing: auto;font-weight: normal;font-style: normal;background-color: var(--text-color-light);}
 a {text-decoration: none;}
 :root {--link-primary-color:#1798e2; --link-secondary-color:#006CA9;--main-color:#111030;--shadow-color:#0479bd80;--text-color-light:#f0f8ff;}
 
@@ -28,21 +28,34 @@ nav a:hover {color: var(--link-primary-color); }
 
 .c { width: 100%;align-items: center;display: flex;text-align: center;box-sizing: border-box; }
 .center-content {width: 90%;max-width: 1650px; line-height: 1.2;display: flex;margin: 0 auto;color: var(--main-color);flex-direction: column;align-items: center;}
-.welcome h1 {font-weight: 700; font-size: 7rem;margin-top: 4.5vh;}
-.welcome span {font-weight: 500; color: var(--link-primary-color);}
-.welcome h2 {font-size: 2rem;}
-.welcome h2 span {font-weight: 700;color: var(--main-color); }
+.welcome h1, h1 {font-weight: 700; font-size: 7rem;margin-top: 4.5vh;}
+.welcome span, span {font-weight: 500; color: var(--link-primary-color);}
+.welcome h2, h2 {font-size: 2rem;line-height: 1.5;}
+.welcome h3, h3 {max-inline-size: 65ch;}
+.welcome h3 span {font-weight: 700;color: var(--main-color);}
+.welcome h2 span, h2 span {font-weight: 700;color: var(--main-color); }
 
-.btn-content {display: flex;align-items: center;justify-content: space-between;;margin-top: 3rem;margin-bottom: 4rem; width: 100%;}
-.btn-primary {font-size: 2.5rem; border: none;border-radius: 50px;background-color: var(--main-color);color: var(--text-color-light); padding: .5rem .9rem;box-shadow: 0px 0px 5px var(--shadow-color);display: flex;align-items: center;}
+.btn-content {display: flex;align-items: center;justify-content: center;;margin-top: 2rem;margin-bottom: 3rem; width: 100%;}
+.btn-primary {font-size: 2.5rem; border: none;border-radius: 50px;background-color: var(--main-color);color: var(--text-color-light); padding: .5rem .9rem;box-shadow: 0px 0px 5px var(--shadow-color);display: flex;align-items: center;text-align: center;}
 .btn-primary:hover {background-color: #0479bd;transition: all 0.2s linear;} 
-.btn-secondary {font-size:2.5rem; margin: 0 1rem;padding: .2rem;color: var(--main-color); border-bottom: 3px solid transparent;font-weight: 600;transition: all 0.1s linear;}
+.btn-secondary {font-size:2.5rem; margin: 0 1rem;padding: .2rem;color: var(--main-color); border-bottom: 3px solid transparent;font-weight: 600;transition: all 0.1s linear;text-align: center;}
 .btn-secondary:hover {border-bottom-color: var(--main-color);}
 
-.btn-big {font-weight: 500;text-transform:capitalize;padding: 1.3rem 1.8rem 1.5rem 1rem;margin:1rem;font-size: 2.5rem;}
+.btn-big {font-weight: 500;text-transform:capitalize;padding: 1.3rem 2.8rem 1.5rem 2rem;margin:1rem;font-size: 2.5rem;}
+.btn-big svg{height: 2.3rem;margin:0 .5rem 0 0;}
 
 .center-content h3 {font-size: 1.8rem;margin:1.2rem auto; font-weight: 500;}
 
+/* "Comenzar App" */
+.c-app {height: 100vh; display: flex; flex-wrap: wrap; align-items: stretch; box-sizing: border-box; align-content: center;}
+.c-app>div {color: var(--main-color); height: 90vh; width: 30rem;max-width: 30%; padding: .5rem .5rem; box-sizing: border-box;}
+.b-lateral {border-top:none;border-left:2px solid var(--main-color);border-bottom: none;border-right: 2px solid var(--main-color);}
+.c-app>div>img {max-width: 100%;height: 10rem;}
+.item-title {display: flex;align-items: center;justify-content: center;height: 5rem;text-align: center;width: 100%;line-height: 1;}
+.item-title h1 {font-size: 2.5rem;font-weight: 600;}
+
+
+/* Formulario de Contacto */
 iframe {width: 100%;min-height: 900px;}
 
 .form-contact {display: flex; align-content: center; flex-wrap: nowrap; box-sizing: border-box; border: none; box-shadow: none; width: 100%; border-radius: 15px; padding: .2rem 1.2rem; margin: 0 auto; flex-direction: column; justify-content: center; align-items: center;}
@@ -61,7 +74,7 @@ textarea.massage-form-contact {width: 100%;min-height: 330px; margin: 0 auto; re
 #ContactForm1_contact-form-submit:hover {background-color:var(--main-color);color:var(--text-color-light);transition: all 0.2s linear;} 
 
 @media (width <= 1210px) {
-    .welcome h1 {line-height: .9;font-size: 6rem;}
+    .welcome h1, h1 {line-height: .9;font-size: 6rem;}
     .btn-primary, .btn-secondary, .btn-big {
       font-size: 2rem;
     }
@@ -74,28 +87,31 @@ textarea.massage-form-contact {width: 100%;min-height: 330px; margin: 0 auto; re
     .logo {text-indent: .6rem;font-size: 2.2em;}
 }
 @media (width <= 950px) {
-    .welcome h1 {line-height: .9;font-size: 4.8rem;}
+    .welcome h1, h1 {line-height: .9;font-size: 4.8rem;}
     .welcome h2 {font-size: 1.6rem;margin-top: 1rem;}
     .btn-content {margin-top: .8rem;}
-    .btn-big {font-size: 1.5rem;padding: 1.1rem 1.5rem;margin:1rem;}
+    .btn-big {font-size: 1.5rem;padding: 1.1rem 1.5rem 1.3rem 1.5rem;margin:1rem;}
     .btn-content .btn-secondary {font-size: 1.5rem;}
 }
 @media (width <= 800px) {
     .welcome h1 {line-height: .9;font-size: 4.2rem;}
 }
 @media (width <= 600px) {
-    .welcome h1 {line-height: .9;}
+    .welcome h1, h1 {line-height: .9;}
     .welcome h2 {font-size: 1.6rem;margin-top: 1rem;}
-    .btn-content {margin-top: 2.8vh;flex-direction: column;height: 40vh;}
-    .btn-content .btn-secondary, .btn-big {font-size: 3.2rem;}
+    .welcome h3 {display: none;}
+    .btn-content {margin-top: 2rem;flex-direction: column;}
+    .btn-big {font-size: 3.2rem;}
+    .btn-content .btn-secondary {font-size: 2.8rem;}
 }
 @media (width <= 470px) {
     .center-content {padding: .5rem;}
-    .welcome h1 {line-height: .9;font-size: 2.7rem;}
+    .welcome h1, h1 {line-height: .9;font-size: 2.7rem;}
     .welcome h2 {font-size: 1.2rem;margin-top: 1rem;}
 
-    .btn-content {margin-top: 2.8vh;flex-direction: column;height: 25vh;}
+    .btn-content {flex-direction: column;margin-bottom: 1rem;}
     .btn-content .btn-secondary, .btn-big {font-size: 1.9rem;}
+    .btn-big {padding: 1rem 1.5rem 1.2rem .7rem;}
 
     .center-content h3 {font-size: 1.1rem;margin:.8rem auto;}
     .form-contact {padding: .2rem;}
