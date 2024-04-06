@@ -78,8 +78,8 @@ input.name-form-contact, input.email-form-contact {display: block; width: 50%; h
 textarea.massage-form-contact {width: 100%;min-height: 330px; margin: 0 auto; resize: none;border:none;}
 .form-contact input:focus, .form-contact textarea:focus {box-shadow: none;border:none;}
 
-#ContactForm1_contact-form-submit {font-size: 1.5rem; border: 3px solid var(--main-color);border-radius: 50px;background-color: transparent !important;color: var(--main-color); padding: .5rem .9rem;display: flex;align-items: center;font-weight: 600;margin:1rem;}
-#ContactForm1_contact-form-submit:hover {background-color:var(--main-color);color:var(--text-color-light);transition: all 0.2s linear;} 
+#ContactForm1_contact-form-submit {font-size: 1.5rem; border: 3px solid var(--main-color);border-radius: 50px;background-color: transparent;color: var(--main-color); padding: .5rem .9rem;display: flex;align-items: center;font-weight: 600;margin:1rem;}
+#ContactForm1_contact-form-submit:hover {background-color:var(--link-primary-color);color:var(--text-color-light);transition: all 0.2s linear;} 
 
 @media (width <= 1210px) {
     .welcome h1, h1 {line-height: .9;font-size: 6rem;}
