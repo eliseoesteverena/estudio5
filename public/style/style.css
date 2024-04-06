@@ -47,12 +47,20 @@ nav a:hover {color: var(--link-primary-color); }
 .center-content h3 {font-size: 1.8rem;margin:1.2rem auto; font-weight: 500;}
 
 /* "Comenzar App" */
-.c-app {height: 100vh; display: flex; flex-wrap: wrap; align-items: stretch; box-sizing: border-box; align-content: center;}
-.c-app>div {color: var(--main-color); height: 90vh; width: 30rem;max-width: 30%; padding: .5rem .5rem; box-sizing: border-box;}
-.b-lateral {border-top:none;border-left:2px solid var(--main-color);border-bottom: none;border-right: 2px solid var(--main-color);}
-.c-app>div>img {max-width: 100%;height: 10rem;}
-.item-title {display: flex;align-items: center;justify-content: center;height: 5rem;text-align: center;width: 100%;line-height: 1;}
-.item-title h1 {font-size: 2.5rem;font-weight: 600;}
+.c-app {height: auto;box-sizing: border-box;display: block;margin-top: 1rem;}
+.c-item {color: var(--main-color); box-sizing: border-box;width: 100%;height: 40%;display: flex;}
+
+.c-item>div {height: 20rem;margin: .5rem;padding: 1rem;border: 3px solid var(--main-color);border-radius: 15px;}
+.c-item>div:nth-child(odd) {}
+.c-item>div:nth-child(even) {}
+
+.distri-2-75-25>div {width: 35%;}
+.distri-2-75-25>div:first-child {width: 65%;}
+
+.distri-2-50-50>div {width: 50%;}
+
+.item-title {display: flex;align-items: center;justify-content: center;text-align: center;width: 100%;line-height: 1;}
+.item-title h1 {font-size: 2.5rem;font-weight: 600;width: 100%;position: relative;text-align: center;margin-top: 0;}
 
 
 /* Formulario de Contacto */
@@ -70,7 +78,7 @@ input.name-form-contact, input.email-form-contact {display: block; width: 50%; h
 textarea.massage-form-contact {width: 100%;min-height: 330px; margin: 0 auto; resize: none;border:none;}
 .form-contact input:focus, .form-contact textarea:focus {box-shadow: none;border:none;}
 
-#ContactForm1_contact-form-submit {font-size: 1.5rem; border: 3px solid var(--main-color);border-radius: 50px;background-color: none;color: var(--main-color); padding: .5rem .9rem;display: flex;align-items: center;font-weight: 600;margin:1rem;}
+#ContactForm1_contact-form-submit {font-size: 1.5rem; border: 3px solid var(--main-color);border-radius: 50px;background-color: transparent !important;color: var(--main-color); padding: .5rem .9rem;display: flex;align-items: center;font-weight: 600;margin:1rem;}
 #ContactForm1_contact-form-submit:hover {background-color:var(--main-color);color:var(--text-color-light);transition: all 0.2s linear;} 
 
 @media (width <= 1210px) {
